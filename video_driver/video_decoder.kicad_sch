@@ -885,7 +885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d843f3d3-3d9c-4804-83d0-c9cadb48b074")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 190.5 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1096,12 +1096,8 @@
 		)
 		(instances
 			(project "video_driver"
-				(path "/4e065576-da6f-4368-b927-7308aa4f3ebd"
-					(reference "U2")
-					(unit 1)
-				)
 				(path "/4e065576-da6f-4368-b927-7308aa4f3ebd/151a68a5-9bf1-4690-afb2-c9d2378ba2be"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
