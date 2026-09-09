@@ -1,0 +1,13 @@
+i planned out my power supply.
+
+2 options: usb-c power pack or 1s battery pack, ill probably connect this with some sort of custom bms board and put it in a housing to ruggedize and protect it. this will act as the counterweight for my helmet mounting solution. Obviously, the standard protection measures are in place, transient protection and a fuse in the event i plug in the wrong jack.
+
+Because this is a battery-powered circuit, ill be using a DC-DC converter for primary step-down for USB power and because of its higher efficiency. Ever since my friend put me on analog devices ive been finding nothing but gems from their product lineup. So, for this purpose, i have selected the ADV2105 3.3v fixed output DC-DC buck converter.
+
+For its 3v3 output, I have provided the necessary and recommended LC lowpass filter to avoid switching noise from contaminating my power line, especially to the sensitive analog components that i have downstream. The ADV7180 probably would explode or do something unexpected if i were to give it a noisy power source, even if it ran off of 1v8 logic.
+
+Speaking of 1v8, i still used an LDO to step down 3v3 to 1v8 since adding another buck converter would take too much space. Also, i would have to do more filtering, and I didnt want to bother with already filtered 3v3 just to add more switching noise down the line.
+
+After taking a moment to properly set up my video decoder IC, I have now realized that i need way more power rails than previously expected, something that will be a problem especially because i got used to the convenience of 4 layer boards with 1 power rail, which allowed me to just put a via to the power layer to get power, which is so much easier than having to manage power traces. Additionally, analog routing in general is just going to be difficult, so theres that too.
+
+
