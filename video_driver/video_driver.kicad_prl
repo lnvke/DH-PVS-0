@@ -4,7 +4,23 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [],
+    "hidden_nets": [
+      "GND",
+      "+1V8_{d}",
+      "AGND",
+      "/VIDEO_DECODER/~{PWRDWN}",
+      "/VIDEO_DECODER/~{RESET}",
+      "/VIDEO_DECODER/ADV_P",
+      "+1V8_{a}",
+      "/VIDEO_DECODER/AIN1",
+      "/POWER_SUPPLY/D-",
+      "/POWER_SUPPLY/D+",
+      "VBAT",
+      "/POWER_SUPPLY/DDO",
+      "/MCU/OSC_{in}",
+      "/MCU/OSC_{out}",
+      "/MCU/BOOT"
+    ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -52,7 +68,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
+    "visible_layers": "00000000_00000000_55555555_ff555555",
     "zone_display_mode": 0
   },
   "git": {
@@ -76,6 +92,8 @@
       false,
       false,
       false,
+      false,
+      false,
       false
     ],
     "col_order": [
@@ -88,7 +106,9 @@
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11
     ],
     "col_widths": [],
     "custom_group_rules": [],

@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +238,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -657,17 +674,17 @@
     "top_level_sheets": [
       {
         "filename": "video_driver.kicad_sch",
-        "name": "Root",
+        "name": "root",
         "uuid": "4e065576-da6f-4368-b927-7308aa4f3ebd"
       }
     ],
-    "used_designators": "C1-20,L1,R1-8,Y1-2,FB1,#PWR1-44,J1-3,F1-3,U1-10",
+    "used_designators": "SW1-2,C1-21,L1,R1-22,Y1-2,FB1-2,#PWR1-56,J1-3,F1-3,U1-10",
     "variants": []
   },
   "sheets": [
     [
       "4e065576-da6f-4368-b927-7308aa4f3ebd",
-      "Root"
+      "root"
     ],
     [
       "151a68a5-9bf1-4690-afb2-c9d2378ba2be",
@@ -680,6 +697,10 @@
     [
       "4a3040e7-e20c-4d24-a3e5-163f1e99884c",
       "POWER_SUPPLY"
+    ],
+    [
+      "8ce48912-84f1-46e8-8874-b7f27a9d7977",
+      "GC9C01"
     ]
   ],
   "text_variables": {},
